@@ -1,0 +1,21 @@
+services:
+  api:
+    command: ["--watch", "src/server.js"]
+    volumes:
+      - ./api/src:/app/src
+
+  front:
+    build:
+      target: dev
+    ports: !override
+      - "4200:4200"
+    environment:
+      - API_URL=http://api:3000
+
+  db:
+    ports: !override
+      - "5432:5432"
+
+    
+    volumes:
+      - ./front/src:/app/src
