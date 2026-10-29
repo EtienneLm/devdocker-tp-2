@@ -27,9 +27,6 @@ jobs:
               env: 
                 DATABASE_URL: postgres://user:${{ env.DB_PASSWORD }}@localhost:5432/postgres
             - run: docker compose -f compose.yaml build
-            - run: |
-                docker run --rm -v /var/run/docker.sock:/var/run/docker.sock \ 
-                -v trivy-cache:/root/.cache aquasec/trivy image --severity CRITICAL \
-                ${{ env.DOCKERHUB_USERNAME }}/shorty-api:${{env.TAG}}
+            - run: docker run --rm -v /var/run/docker.sock:/var/run/docker.sock -v trivy-cache:/root/.cache aquasec/trivy image --severity CRITICAL ${{ env.DOCKERHUB_USERNAME }}/shorty-api:${{env.TAG}}
             - run: docker compose push api front
             
