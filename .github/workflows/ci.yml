@@ -23,4 +23,5 @@ jobs:
               run: npm ci && npm test
               env: 
                 DATABASE_URL: postgres://user:${{ env.DB_PASSWORD }}@localhost:5432/postgres
+            - run: docker compose -f compose.yaml build
                 
