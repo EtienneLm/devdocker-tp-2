@@ -1,6 +1,6 @@
 # TP Shorty
 
-https://github.com/EtienneLm/devdocker-tp-2/actions/workflows/ci.yml/badge.svg
+[![CI](https://github.com/EtienneLm/devdocker-tp-2/actions/workflows/ci.yml/badge.svg)](https://github.com/EtienneLm/devdocker-tp-2/actions/workflows/ci.yml)
   
 ## How to install
 
