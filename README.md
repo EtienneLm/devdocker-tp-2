@@ -4,12 +4,11 @@
 
 ## Image release
 
-### When 
+| Event | Image release ? | Tags | Production ready ? |
+|---|---|---|---|
+| Push on `main` | Yes | `main` | No |
+| Push with Git tag `vX.Y.Z` | Yes | `vX.Y.Z` | Yes |
 
-| Event | Image release ? | Tags |
-|---|---|---|
-| Push on `main` | Yes | `main` |
-| Push with Git tag `vX.Y.Z` | yes | `X.Y.Z` |
   
 ## How to install
 
