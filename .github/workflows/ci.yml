@@ -9,7 +9,9 @@ jobs:
             DB_PASSWORD: secret
             DOCKERHUB_USERNAME: ${{ vars.DOCKERHUB_USERNAME }}
             TAG: ${{ github.ref_name }}
-            
+            POSTGRES_USER: user
+            POSTGRES_PASSWORD: secret
+            POSTGRES_DB: postgres
 
         steps:
             - uses: actions/checkout@v7
