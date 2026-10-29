@@ -1,6 +1,15 @@
 # TP Shorty
 
 [![CI](https://github.com/EtienneLm/devdocker-tp-2/actions/workflows/ci.yml/badge.svg)](https://github.com/EtienneLm/devdocker-tp-2/actions/workflows/ci.yml)
+
+## Image release
+
+### When 
+
+| Event | Image release ? | Tags |
+|---|---|---|
+| Push on `main` | Yes | `main` |
+| Push with Git tag `vX.Y.Z` | yes | `X.Y.Z` |
   
 ## How to install
 
