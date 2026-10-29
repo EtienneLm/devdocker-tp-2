@@ -1,5 +1,22 @@
 # TP Shorty
 
+## How to install
+
+Clone project with :
+```bash
+git clone https://github.com/EtienneLm/devdocker-tp-2.git
+```
+
+Create `.env` from examples in `root` and `api/`
+
+Run command in the project's root : 
+```bash
+docker compose up -d
+``` 
+
+
+## Consignes
+
 > **Projet de TP** du cours « Dév avec Docker » (M2 Expert Développement Full Stack). Ce n'est pas une application maintenue : elle sert de support aux exercices.
 
 Raccourcisseur d'URL : on colle une URL, on obtient un lien court `/s/<code>` qui compte les clics.
