@@ -7,6 +7,9 @@ jobs:
         runs-on: ubuntu-latest
         env:
             DB_PASSWORD: secret
+            DOCKERHUB_USERNAME: ${{ vars.DOCKERHUB_USERNAME }}
+            TAG: ${{ github.ref_name }}
+            
 
         steps:
             - uses: actions/checkout@v7
@@ -18,3 +21,4 @@ jobs:
               run: npm ci && npm test
               env: 
                 DATABASE_URL: postgres://user:${{ env.DB_PASSWORD }}@localhost:5432/postgres
+                
