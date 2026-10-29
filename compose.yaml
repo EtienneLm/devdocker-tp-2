@@ -26,6 +26,7 @@ services:
     networks:
       - back
       - front
+    image: ${DOCKERHUB_USERNAME}/shorty-api:${TAG}
   
   front:
     build: ./front
@@ -35,6 +36,7 @@ services:
       - front
     ports:
       - "8080:80"
+    image: ${DOCKERHUB_USERNAME}/shorty-front:${TAG}
 
 volumes:
   db-data:

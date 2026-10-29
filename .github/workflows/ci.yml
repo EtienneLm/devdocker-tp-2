@@ -1,0 +1,15 @@
+name: CI
+on:
+    push:
+        branches: [develop]
+jobs:
+    ci:
+        runs-on: ubuntu-latest
+        env:
+            DB_PASSWORD: secret
+
+        steps:
+            - uses: actions/checkout@v7
+            - run: docker compose up -d --wait db
+
+        
