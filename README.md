@@ -1,5 +1,7 @@
 # TP Shorty
 
+https://github.com/EtienneLm/devdocker-tp-2/actions/workflows/ci.yml/badge.svg
+  
 ## How to install
 
 Clone project with :
