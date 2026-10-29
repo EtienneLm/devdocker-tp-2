@@ -17,7 +17,7 @@ jobs:
 
         steps:
             - uses: actions/checkout@v7
-            - run: echo ${{ secrets.DOCKERHUB_PASSWORD }} | docker login -u ${{ vars.DOCKERHUB_USERNAME }} --password-stdin
+            - run: echo ${{ secrets.DOCKERHUB_TOKEN }} | docker login -u ${{ vars.DOCKERHUB_USERNAME }} --password-stdin
             - run: docker compose up -d --wait db
             - uses: actions/setup-node@v7
               with:
